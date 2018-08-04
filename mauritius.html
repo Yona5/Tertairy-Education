@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mauritius</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <ul id="headerUl">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href="norway.html">Norway</a></li>
+                <li><a href="uk.html">UK</a></li>
+            </ul>
+            <p id="headerPara">Tertiary Education in Mauritius</p>
+            <div class ="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>- Mauritius</span>
+            </div>
+        </header>
+        <main>
+            <div id="main-row-1">
+                <div class="widthContainer">
+                    
+                    <h1><i class="fa fa-university"></i>Tertiary Education in Mauritius</h1>
+                    <p>The Tertiary education is maintained by the Ministry of Tertiary Education, Science, Research and Technology. The Tertiary Education Commission has the responsibility for allocating public funds and planning and coordinating the development of post-secondary education. Its strategic plan envisages Mauritius as a regional knowledge hub and a centre for higher learning and excellence.</p>
+                    <div id="row-1-flex-container">
+                       <div class="row-1-flex-col">
+                           <p class="para">Male Literacy</p>
+                           <div class="circle">
+                                <p>92.3%</p>
+                            </div>
+                        </div>
+                        <div class="row-1-flex-col">
+                           <p class="para">Female Literacy</p>
+                           <div class="circle">
+                                <p>87.3%</p>
+                            </div>
+                        </div>
+                        <div class="row-1-flex-col">
+                           <p class="para">Total</p>
+                           <div class="circle">
+                                <p>89.8%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="main-row-2">
+                <div class="widthContainer">
+                    <p id = "listPara" class="paras"><i class="fa fa-list"></i>List of Universities in Mauritius</p>
+                    <div id="uniList">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="main-row-3">
+                <div class="widthContainer">
+                    <h1 id="graphPara" class="paras">Enrolment in tertiary education, all programmes, both sexes</h1>
+                    <div class = "canvasContainer">
+                         <canvas id="lineChart" width="200" height="200"></canvas>
+                    </div>
+                    <div id="selContainer">
+                        <p id="dept" class="paras">Percentage of students in tertiary education</p>
+                        <select onchange = "getOptions(this)">
+                            <option id="mu" class="country">Choose Programmes</option>
+                            <option id="agri">Agriculture programmes</option>
+                             <option id="edu">Education programmes</option>
+                            <option id ="eng">Engineering and Construction</option>
+                            <option id ="health">Health and Welfare programmes</option>
+                            <option id ="hum">Humanities and Arts programmes</option>
+                            <option id="unspecified"> programmes in unspecified fields</option>
+                            <option id="sci">Science programmes</option>
+                            <option id="ser">Services programmes</option>
+                            <option id="social">Social Sciences, Business and Law</option>
+                        </select>
+                    </div>
+                    <div class = "canvasContainer">
+                         <canvas id="barChart" width="200" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p id="poweredBy">Powered by Injera. 2018</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
